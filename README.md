@@ -18,7 +18,11 @@
 
 # 📖 Introduction
 
+> [!NOTE]
+> Install Tanstack: npm install @tanstack/react-query
+
 <!--
+
 
 1. Handling HTTP request
 1. Implementing async/await (fetch..then()) to get response
