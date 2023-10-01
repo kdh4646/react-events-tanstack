@@ -19,7 +19,7 @@
 # 📖 Introduction
 
 > [!NOTE]
-> Install Tanstack: npm install @tanstack/react-query
+> Install Tanstack: npm install @tanstack/react-query (add `@beta` at the end to get 5.0 version)
 
 <!--
 
