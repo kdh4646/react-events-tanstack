@@ -40,6 +40,12 @@ export default function EditEvent() {
     onError: (error, data, context) => {
       queryClient.setQueryData(["events", params.id], content.previousEvent);
     },
+
+    //execute on every mutate call (no matter failed or succeed)
+    onSettled: () => {
+      //to know whether data is latest one.
+      queryClient.invalidateQueries(["events", params.id]);
+    },
   });
 
   function handleSubmit(formData) {
