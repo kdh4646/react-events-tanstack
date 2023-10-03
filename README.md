@@ -24,5 +24,5 @@
 - Implement a SPA using React query(tanstack)
 
 # 👀 Screenshots
+![image](https://github.com/kdh4646/react-events-tanstack/assets/71913953/f8c5f3ba-d061-478d-8410-206a1eccaa8c)
 
-<!--![image](https://github.com/kdh4646/class-based-components/assets/71913953/59ffe86c-e5ab-4135-9626-741a48bf9b3c) -->
