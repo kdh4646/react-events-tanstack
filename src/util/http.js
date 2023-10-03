@@ -3,12 +3,17 @@ import { QueryClient } from "@tanstack/react-query";
 //tanstack QueryClient usage
 export const queryClient = new QueryClient();
 
-export async function fetchEvents({ signal, searchTerm }) {
+export async function fetchEvents({ signal, searchTerm, max }) {
   let url = "http://localhost:3000/events";
 
-  //for FindEventSection.jsx
-  if (searchTerm) {
+  //recently added events (max numbers events)
+  if (searchTerm && max) {
+    url += "?search=" + searchTerm + "?max=" + max;
+  } else if (searchTerm) {
+    //for FindEventSection.jsx
     url += "?search=" + searchTerm;
+  } else if (max) {
+    url += "?max=" + max;
   }
 
   const response = await fetch(url, { signal: signal });

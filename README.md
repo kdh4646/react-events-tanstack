@@ -21,19 +21,7 @@
 > [!NOTE]
 > Install Tanstack: npm install @tanstack/react-query (add `@beta` at the end to get 5.0 version)
 
-<!--
-
-
-1. Handling HTTP request
-1. Implementing async/await (fetch..then()) to get response
-2. Using The-Star-Wars API for GET data
-3. Using Firebase for POST data
-
-- Implement a simple React page for
-1. Learning Class based components
-2. Using `componentDidUpdate()`, `componentDidMount()`, `componentDidCatch()`, `React.Component`
-3. Control errors which only supported by Class based components
--->
+- Implement a SPA using React query(tanstack)
 
 # 👀 Screenshots
 

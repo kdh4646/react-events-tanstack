@@ -9,10 +9,10 @@ import { fetchEvents } from "../../util/http.js";
 export default function NewEventsSection() {
   //tanstack hook
   const { data, isPending, isError, error } = useQuery({
-    queryKey: ["events"],
+    queryKey: ["events", { max: 3 }],
 
-    //setting request
-    queryFn: fetchEvents,
+    //setting request                                        below indicates {max: 3}
+    queryFn: ({ signal, queryKey }) => fetchEvents({ signal, ...queryKey[1] }),
 
     /*
       For prohibiting unnecessary request
